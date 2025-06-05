@@ -97,36 +97,64 @@ section {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.line {
+.line,
+.line1,
+.line2 {
+        display: flex;
+        background-image: linear-gradient(to right, #00568c, #008e66);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 3px;
+        border-radius: 2px;
+}
+
+.line3 {
+        display: flex;
+        background-image: linear-gradient(to right, #00568c, #008e66);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 3px;
+        border-radius: 2px;
+        bottom: 100px;
+}
+
+.techLine {
     display: flex;
     background-image: linear-gradient(to right, #00568c, #008e66);
     position: absolute;
     left: 50%;
+    width: 100px;
+    height: 3px;
+    border-radius: 2px;
     transform: translateX(-50%);
-    width: 100px;
-    height: 3px;
-    border-radius: 2px;
 }
 
-.line1 {
+.getInTouchLine {
     display: flex;
     background-image: linear-gradient(to right, #00568c, #008e66);
     position: absolute;
-    left: 12.5%;
+    left: 50%;
     width: 100px;
     height: 3px;
     border-radius: 2px;
+    transform: translateX(-50%);
 }
 
-.line2 {
+.portfolioLine {
     display: flex;
     background-image: linear-gradient(to right, #00568c, #008e66);
     position: absolute;
-    left: 80%;
+    left: 50%;
     width: 100px;
     height: 3px;
     border-radius: 2px;
+    transform: translateX(-50%);
 }
+
 
 .gText {
     color: #008e66;
@@ -192,7 +220,7 @@ footer,
 .dropdown2:hover .dropdown-content {
   display: block;
   right: 10px;
-  bottom: 35px;
+  bottom: 25px;
 }
 
 
@@ -278,4 +306,71 @@ footer,
 .adv-selectors-demo li:hover {
     background-image: linear-gradient(to right, #00568c, #008e66);
     color: #fff;
+}
+
+/* Media Querys */
+@media screen and (min-width: 531px) {
+    .line1 {
+        display: flex;
+        background-image: linear-gradient(to right, #00568c, #008e66);
+        position: absolute;
+        left: 17.5%;
+        width: 100px;
+        height: 3px;
+        border-radius: 2px;
+    }
+
+    .line2 {
+        display: flex;
+        background-image: linear-gradient(to right, #00568c, #008e66);
+        position: absolute;
+        left: 45%;
+        width: 100px;
+        height: 3px;
+        border-radius: 2px;
+    }
+
+    .line {
+        display: flex;
+        background-image: linear-gradient(to right, #00568c, #008e66);
+        position: absolute;
+        left: 75%;
+        width: 100px;
+        height: 3px;
+        border-radius: 2px;
+    }
+}
+
+@media screen and (min-width: 839px) {
+
+    .line {
+        display: flex;
+        background-image: linear-gradient(to right, #00568c, #008e66);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 3px;
+        border-radius: 2px;
+    }
+
+    .line1 {
+        display: flex;
+        background-image: linear-gradient(to right, #00568c, #008e66);
+        position: absolute;
+        left: 12.5%;
+        width: 100px;
+        height: 3px;
+        border-radius: 2px;
+    }
+
+    .line2 {
+        display: flex;
+        background-image: linear-gradient(to right, #00568c, #008e66);
+        position: absolute;
+        left: 80%;
+        width: 100px;
+        height: 3px;
+        border-radius: 2px;
+    }
 }
