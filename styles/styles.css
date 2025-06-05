@@ -1,0 +1,281 @@
+/****
+COLOR PALETTE
+#00568c - Blue
+#008e66 - Green
+#FFFFFF - White
+#000000 - Black
+#3d3d3d - Grey
+****/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #FFF;
+}
+
+p {
+    color: #FFF;
+    margin-left: 5%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3d3d3d;
+}
+
+
+h1,
+h2,
+h3 {
+    display: flex;
+    text-align: center;
+    padding: 15px;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-image: linear-gradient(#00568c, #008e66);
+    color: #FFF;
+    text-align: center;
+    height: 400px;
+    padding: 10%;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+header a:hover {
+    color: #FFF;
+}
+nav {
+    background: #3d3d3d;
+    color: #fff;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    margin: 0%;
+}
+
+nav img {
+    float: left;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    justify-items: center;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #008e66;
+}
+
+
+.Logo {
+    height: 100px;
+    width: 150px;
+}
+section {
+    background: #fff;
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 8px;
+    max-width: 900px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.line {
+    display: flex;
+    background-image: linear-gradient(to right, #00568c, #008e66);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.line1 {
+    display: flex;
+    background-image: linear-gradient(to right, #00568c, #008e66);
+    position: absolute;
+    left: 12.5%;
+    width: 100px;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.line2 {
+    display: flex;
+    background-image: linear-gradient(to right, #00568c, #008e66);
+    position: absolute;
+    left: 80%;
+    width: 100px;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.gText {
+    color: #008e66;
+    margin: 5%;
+    text-align: center;
+}
+
+b {
+    color:#3d3d3d
+}
+
+.col {
+    border: #00568c solid 3px;
+    padding: 50px; 
+    margin: 5px;
+    border-radius: 25%;
+}
+
+.col:hover {
+    border: #008e66 solid 3px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+footer,
+.footer-nav {
+    background-image: linear-gradient( 45deg, #00568c, #008e66);
+}
+
+
+
+/* Tech Stack */
+.tech {
+    background: linear-gradient(135deg, #00568c, #008e66);
+    color: #FFF;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Drop down menu*/
+.dropdown,
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+  color: #3d3d3d;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-image: linear-gradient(135deg, #00568c, #008e66);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  right: 10px;
+}
+
+.dropdown2:hover .dropdown-content {
+  display: block;
+  right: 10px;
+  bottom: 35px;
+}
+
+
+
+
+/* Animation & Transition Demo */
+.anim-box {
+    width: 100px;
+    height: 100px;
+    background: #00568c;
+    margin: 1em 0;
+    border-radius: 8px;
+    transition: transform 0.5s, background 0.5s;
+    animation: pulse 2s infinite alternate;
+    display: inline-block;
+}
+.anim-box:hover {
+    transform: scale(1.2) rotate(10deg);
+    background: #008e66;
+}
+@keyframes pulse {
+    from { box-shadow: 0 0 0 0 #3d3d3d44; }
+    to { box-shadow: 0 0 20px 10px #3d3d3d44; }
+}
+
+/* Visibility Demo */
+.vis-demo {
+    margin: 1em 0;
+}
+.vis-box {
+    width: 120px;
+    height: 60px;
+    background: #008e66;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+    border-radius: 6px;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+.vis-box.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Box Model Demo */
+.box-model-demo {
+    display: flex;
+    gap: 2em;
+    margin: 1em 0;
+}
+.box {
+    width: 120px;
+    height: 120px;
+    background: #9b59b6;
+    color: #fff;
+    padding: 20px;
+    border: 5px solid #8e44ad;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #8e44ad44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Advanced CSS Selectors Demo */
+.adv-selectors-demo ul {
+    list-style: none;
+    padding: 0;
+}
+.adv-selectors-demo li {
+    padding: 0.5em 1em;
+    margin: 0.2em 0;
+    background: #eee;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.adv-selectors-demo li:hover {
+    background-image: linear-gradient(to right, #00568c, #008e66);
+    color: #fff;
+}
